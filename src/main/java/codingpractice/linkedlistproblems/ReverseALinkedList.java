@@ -16,7 +16,7 @@ public class ReverseALinkedList {
 		linkedListOperations.addValue(linkedListDemo, 5);
 		
 		linkedListOperations.showLinkedListValues(linkedListDemo);
-		System.out.println();
+		
 		LinkedListDemo reverseLinkedList = reverseLinkedList(linkedListDemo);
 		linkedListOperations.showLinkedListValues(reverseLinkedList);
 	}

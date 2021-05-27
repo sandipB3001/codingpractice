@@ -26,5 +26,6 @@ public class LinkedListOperations {
 			System.out.print(linkedListDemo.getValue()+"\t");
 			linkedListDemo = linkedListDemo.getNextNode();
 		}
+		System.out.println();
 	}
 }

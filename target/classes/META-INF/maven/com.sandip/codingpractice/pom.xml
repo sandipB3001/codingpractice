@@ -6,6 +6,13 @@
 	<artifactId>codingpractice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>codingpractice</name>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -16,7 +23,7 @@
 					<archive>
 						<index>true</index>
 						<manifest>
-							<mainClass>codingpractice.demo.Main</mainClass>
+							<mainClass>codingpractice.demo.ReverseALinkedList</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
