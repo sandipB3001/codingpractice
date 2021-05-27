@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: sandip
-Build-Jdk: 14.0.2
-Main-Class: codingpractice.demo.ReverseALinkedList
-Created-By: Maven Integration for Eclipse
-
