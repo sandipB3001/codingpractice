@@ -21,26 +21,26 @@ public class ReverseALinkedList {
 		linkedListOperations.showLinkedListValues(reverseLinkedList);
 	}
 	
-	public static LinkedListDemo reverseLinkedList(LinkedListDemo linkedListDemo) {
-		LinkedListDemo newLinkedListDemo = new LinkedListDemo();
-		newLinkedListDemo.setValue(linkedListDemo.getValue());
-		newLinkedListDemo.setNextNode(null);
-		
-		LinkedListDemo pointerNode = linkedListDemo.getNextNode();
+	public static LinkedListDemo reverseLinkedList(LinkedListDemo head) {
+
+		LinkedListDemo pointerNode = head;
+		LinkedListDemo ref = null;
+		LinkedListDemo ref1 = null;
 		while(null!=pointerNode) {
-			LinkedListDemo temp = new LinkedListDemo();
-			temp.setValue(pointerNode.getValue());
-			temp.setNextNode(newLinkedListDemo);
-			newLinkedListDemo = temp;
 			
-			pointerNode = pointerNode.getNextNode();
+			ref = pointerNode.getNextNode();
+			pointerNode.setNextNode(ref1);
+			
+			ref1 = pointerNode;
+			pointerNode = ref;
+
 		}
-		
-		return newLinkedListDemo;
+		head = ref1;
+		return head;
 	}
 
 }
 
 //Time complexity: O(n) and Space Complexity: Not sure
-// i/p: 1	2	3	4	5
-// o/p: 5	4	3	2	1
+// i/p: 1	2	3	4	5----pointerNode
+// o/p: 5	4	3	2	1----newLinkedListDemo
