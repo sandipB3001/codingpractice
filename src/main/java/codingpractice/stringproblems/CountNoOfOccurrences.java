@@ -23,3 +23,17 @@ public class CountNoOfOccurrences {
 	}
 
 }
+
+// i/p : "I love coding"
+//o/p :
+//	c->1
+//	d->1
+//	e->1
+//	v->1
+//	g->1
+//	i->2
+//	l->1
+//	n->1
+//	o->2
+
+//Time complexity: O(n) and Space Complexity: O(n)
